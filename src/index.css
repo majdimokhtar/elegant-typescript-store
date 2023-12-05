@@ -10,7 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background: linear-gradient(#31220b, #382e1b); */
-  background: linear-gradient(#fefae0, #fff);
+  background: linear-gradient(#6d6875, #fff);
   color: #f3e7d4;
   min-height: 100vh;
 }
@@ -62,7 +62,7 @@ h1 {
 
 #shop h2 {
   font-size: 1.5rem;
-  color: #a59b8b;
+  color: #f4a261;
   text-transform: uppercase;
 }
 
@@ -77,7 +77,7 @@ h1 {
 
 .product {
   height: 100%;
-  background: #5f4e33;
+  background: #3d405b;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
@@ -130,7 +130,7 @@ h1 {
 #cart-modal {
   top: 5rem;
   width: 30%;
-  background: #d3b17b;
+  background: #fff;
   border: none;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
