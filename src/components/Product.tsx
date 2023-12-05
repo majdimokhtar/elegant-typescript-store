@@ -1,18 +1,31 @@
+import { addToCart } from "../store/cart-slice"
+import { useCattDispatch } from "../store/hooks"
+
 type ProductProps = {
-  id: string;
-  image: string;
-  title: string;
-  price: number;
-  description: string;
-};
+  id: string
+  image: string
+  title: string
+  price: number
+  description: string
+}
 
 export default function Product({
+  id,
   image,
   title,
   price,
   description,
 }: ProductProps) {
-  function handleAddToCart() {}
+  const dispatch = useCattDispatch()
+  function handleAddToCart() {
+    dispatch(
+      addToCart({
+        id,
+        title,
+        price,
+      })
+    )
+  }
 
   return (
     <article className="product">
@@ -28,5 +41,5 @@ export default function Product({
         </p>
       </div>
     </article>
-  );
+  )
 }
